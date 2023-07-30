@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+#st1 {
+    background: linear-gradient(rgba(0,0,0,0.5),#009688),url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+.logo {
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 10%;  
+}
+.s1BannerText {
+    color: white;
+    text-align: center;
+    padding-top: 180px;
+}
+.s1BannerText h1 {
+    font-size: 130px;
+    font-family: 'Kaushan Script',cursive;
+}
+.s1BannerText p {
+    font-size: 20px;
+    font-style: italic;
+}
+.s1bannerBtn {
+    margin: 70px auto 0;
+}
+.s1bannerBtn a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    width: 150px;
+    display: inline-block;
+    padding: 12px 0;
+    margin: 0 10px;
+    border: 0.5px solid white;
+    position: relative;
+    z-index: 1;
+}
+.s1bannerBtn a span {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+.s1bannerBtn a:hover span {
+    width: 100%;
+}
+.s1bannerBtn a:hover {
+    color: black;
+}
+#sideNav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #009688;
+    z-index: 2;
+    transition: 0.5s;
+
+}
+#sideNav ul li {
+    list-style-type: none;
+    margin: 50px 20px;
+}
+#sideNav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+#menuBtn {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    text-align: center;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    background: #009688;
+    z-index: 3;
+    cursor: pointer;
+}
+#menuBtn img {
+    width: 20px;
+    margin-top: 15px;
+}
+
+
+
+#Features {
+    width: 100%;
+    padding: 70px 0;
+}
+.titleText {
+    text-align: center;
+    padding-bottom: 70px;
+}
+.titleText p {
+    margin: auto;
+    font-size: 20px;
+    color:#009688;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.titleText p::after{
+    content: '';
+    width:50px;
+    height: 35px;
+    background:linear-gradient(#019587,#fff);
+    position: absolute;
+    top:-20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+}
+.titleText h1 {
+    font-size: 40px;
+}
+.featureBoxBody {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.featuresLeftSide {
+    flex-basis: 50%;
+}
+.featuresRightSide {
+    flex-basis: 50%;
+    margin: auto;
+}
+.featuresRightSide img {
+    width: 70%;
+    border-radius: 10px;
+}
+.featuresLeftSide h1 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #009688;
+}
+.leftSideDescription {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.text p {
+    padding: 0 20px;
+    text-align: initial;
+    font-weight: bold;
+}
+.icon .fa {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #009688;
+    border: 1px solid #009688;
+}
+
+
+
+#services {
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+}
+.serviceBox {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.singleServices {
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+.singleServices img {
+    width: 100%;
+    border-radius: 7px;
+}
+.overlay {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     border-radius: 7px;
+     cursor: pointer;
+     background:linear-gradient(rgba(0,0,0,0.5),#009688);
+     opacity: 0;
+     transition: 1s;
+}
+.singleServices:hover .overlay {
+    opacity: 1;
+}
+.serviceDescription {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    opacity: 0;
+    transition: 1s;
+}
+hr {
+    background: #fff;
+    height: 2px;
+    margin: 15px auto;
+    width: 60%;
+}
+.serviceDescription p {
+    font-size:14px;
+}
+.singleServices:hover .serviceDescription  {
+    bottom: 40%;
+    opacity: 1;
+}
+
+
+
+
+#testimonial {
+    width: 100%;
+    padding: 70px 0;
+}
+.testimonialRow {
+    width: 80%;
+     margin: auto;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: flex-start;
+}
+.testimonialColum {
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #00968814;
+    cursor: pointer;
+    transition: transform .5s;
+}
+.testimonialColum p {
+    font-size: 14px;
+}
+.user {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img {
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+.userInfo .fa {
+    margin-left: 10px;
+    color: #27c0ff;
+    font-size: 20px;
+}
+.userInfo small{
+    color: #009688;
+}
+.testimonialColum:hover {
+     transform: translateY(-7px);
+}
+
+
+
+#footer {
+    background: #efefef;
+    width: 100;
+    padding: 100px 0 20px;
+    position: relative;
+}
+.footerRow {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footerLeft,.footerRight {
+    flex-basis: 48%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footerRight {
+    text-align: right;
+}
+.footerRow h1{
+    margin: 10px 0;
+}
+.footerRow p {
+    line-height: 35px;
+}
+.footerLeft .fa,.footerRight .fa {
+    font-size: 20px;
+    color: #009688;
+    margin: 10px;
+}
+.footerImg {
+     max-width: 370px;
+     opacity: 0.1;
+     position: absolute;
+     left: 50%;
+     top :35%;
+     transform: translate(-50%,-50%);
+}
+.soicalLinks {
+    text-align: center;
+}
+.soicalLinks .fa {
+    height: 40px;
+    width: 40px;
+     font-size: 20px;
+     line-height: 40px;
+     border: 1px solid #009688;
+     margin: 40px 5px 0;
+     color: #009688;
+     cursor: pointer;
+}
+.soicalLinks .fa:hover{
+    background: #009688;
+    color: #fff;
+    transform: translateY(-7px);
+}
+.soicalLinks p {
+    font-size: 12px;
+    margin-top: 20px;
+}
+ 
+@media screen and (max-width:770px){
+    .s1BannerText h1 {
+        font-size: 35px;
+    }
+    .s1bannerBtn a {
+        display: block;
+        margin:20px auto;
+    }
+    .featuresLeftSide {
+        flex-basis: 100%;
+    }
+    .featuresRightSide {
+        flex-basis: 100%;
+    }
+    .featuresRightSide img {
+        width: 100%;
+    }
+    .singleServices {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .serviceDescription p {
+        font-size:12px;
+    }
+    hr {
+        margin:5px auto;
+    }
+    .singleServices:hover .serviceDescription  {
+        bottom: 25% !important;
+        
+    }
+    .testimonialColum {
+        flex-basis: 100%;
+    }
+
+    .footerLeft,.footerRight {
+        flex-basis: 100%;
+        font-size:14px;
+    }
+    .footerImg {
+        top: 25%;
+    }
+}
